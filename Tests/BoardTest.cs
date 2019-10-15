@@ -6,7 +6,7 @@ namespace Tests
     public class Tests
     {
         
-        BoardImpl _board;
+        private BoardImpl _board;
         [SetUp]
         public void Setup()
         {
