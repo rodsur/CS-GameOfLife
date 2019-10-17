@@ -1,4 +1,4 @@
-namespace GameOfLife
+namespace GameOfLife.UserInterface
 {
     public interface IUserInterface
     {
