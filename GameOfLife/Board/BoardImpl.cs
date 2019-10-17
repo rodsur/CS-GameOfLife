@@ -1,6 +1,6 @@
 using Board;
 
-namespace GameOfLife
+namespace GameOfLife.Board
 {
     public class BoardImpl : IBoard
     {

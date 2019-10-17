@@ -1,4 +1,4 @@
-namespace Board
+namespace GameOfLife.Board
 {
     public interface IBoard
     {
