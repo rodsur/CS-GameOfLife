@@ -7,6 +7,7 @@ namespace GameOfLife.Board
         void SetSize(int x, int y);
         void SetCell(int x, int y, bool state);
         bool GetCell(int x, int y);
+        int[] GetSize();
 
     }
 }

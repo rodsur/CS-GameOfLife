@@ -49,5 +49,10 @@ namespace GameOfLife.Board
         {
             return _board[x, y];
         }
+
+        public int[] GetSize()
+        {
+            return new int[] {_board.GetLength(0), _board.GetLength(1)};
+        }
     }
 }
