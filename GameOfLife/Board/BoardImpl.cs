@@ -25,7 +25,14 @@ namespace GameOfLife.Board
 
         public void PopulateBoard(bool[,] board)
         {
-            throw new System.NotImplementedException();
+            SetSize(board.GetLength(0), board.GetLength(1));
+            for (var x = 0; x < _board.GetLength(0); x++)
+            {
+                for (var y = 0; y < _board.GetLength(1); y++)
+                {
+                    SetCell(x, y, board[x,y]);
+                }
+            }
         }
 
         public void SetSize(int x, int y)
