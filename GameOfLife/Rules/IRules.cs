@@ -1,4 +1,4 @@
-namespace Board
+namespace GameOfLife.Rules
 {
     public interface IRules
     {
