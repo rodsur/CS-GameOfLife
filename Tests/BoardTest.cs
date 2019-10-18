@@ -29,5 +29,13 @@ namespace Tests
             Assert.AreEqual(_board.GetSize()[0],2);
             Assert.AreEqual(_board.GetSize()[1],3);
         }
+
+        [Test]
+        public void ClearBoardTest()
+        {
+            _board.SetCell(1,2,true);
+            _board.ClearBoard();
+            Assert.False(_board.GetCell(1,2));
+        }
     }
 }
