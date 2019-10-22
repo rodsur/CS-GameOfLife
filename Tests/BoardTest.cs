@@ -1,5 +1,4 @@
 using NUnit.Framework;
-using GameOfLife;
 using GameOfLife.Board;
 
 namespace Tests

@@ -1,5 +1,3 @@
-using Board;
-
 namespace GameOfLife.Board
 {
     public class BoardImpl : IBoard
