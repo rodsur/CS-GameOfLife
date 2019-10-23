@@ -20,16 +20,19 @@ namespace Tests
             Assert.False(_rules.EnforceRules(true,2));
         }
 
+        [Test]
         public void EnforceRules_Liveon_Test()
         {
             Assert.True(_rules.EnforceRules(true,3));
         }
 
+        [Test]
         public void EnforceRules_Overpop_Test()
         {
             Assert.False(_rules.EnforceRules(true,5));
         }
 
+        [Test]
         public void EnforceRules_Resurrection_Test()
         {
             Assert.True(_rules.EnforceRules(false,3));
