@@ -3,7 +3,7 @@ using GameOfLife.Board;
 
 namespace Tests
 {
-    public class Tests
+    public class BoardTest
     {
         
         private BoardImpl _board;

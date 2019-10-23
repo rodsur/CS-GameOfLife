@@ -3,7 +3,7 @@ using GameOfLife.Rules;
 
 namespace Tests
 {
-    public class RulesTests
+    public class RulesTest
     {
         
         private RulesImpl _rules;
