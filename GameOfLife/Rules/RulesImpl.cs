@@ -2,13 +2,14 @@ namespace GameOfLife.Rules
 {
     public class RulesImpl : IRules
     {
-        private int _livingThreshold;
-        private int _dyingThreshold;
+        private int _underpopThreshold;
+        private int _overpopThreshold;
         private int _resurrectionThreshold;
         
         public RulesImpl()
         {
-            
+            _underpopThreshold = 2;
+            _overpopThreshold = 4;
         }
         
         
@@ -17,12 +18,12 @@ namespace GameOfLife.Rules
             throw new System.NotImplementedException();
         }
 
-        public void setLivingThreshold(int cells)
+        public void setUnderpopThreshold(int cells)
         {
             throw new System.NotImplementedException();
         }
 
-        public void setDyingThreshold(int cells)
+        public void setOverpopThreshold(int cells)
         {
             throw new System.NotImplementedException();
         }
