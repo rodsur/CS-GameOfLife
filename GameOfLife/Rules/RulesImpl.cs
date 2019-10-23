@@ -10,12 +10,21 @@ namespace GameOfLife.Rules
         {
             _underpopThreshold = 2;
             _overpopThreshold = 4;
+            _resurrectionThreshold = 3;
         }
         
         
         public bool EnforceRules(bool state, int livingCells)
         {
-            throw new System.NotImplementedException();
+            if ((state == true && livingCells <= _underpopThreshold) || (state == true && livingCells >= _overpopThreshold))
+            {
+                return false;
+            } else if (state == false && livingCells == _resurrectionThreshold)
+            {
+                return true;
+            }
+            
+            return state;
         }
 
         public void setUnderpopThreshold(int cells)
